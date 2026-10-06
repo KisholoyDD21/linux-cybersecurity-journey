@@ -30,7 +30,8 @@ This repository documents my **hands-on journey** learning **Linux fundamentals,
 | **01** | Linux Basics — Root access, directory structure, `pwd`, `cd`, `ls`, `echo`, `rm`, `mv`, redirection | ✅ Complete | [`01-linux-basics/day-01.md`](01-linux-basics/day-01.md) |
 | **02** | File Permissions & System Commands — `locate`, `updatedb`, `passwd`, `man`, `ls -la` breakdown | ✅ Complete | [`02-file-permissions/day-02.md`](02-file-permissions/day-02.md) |
 | **03** | Users, Permissions & sudo — `chmod` (numeric), `adduser`, `/etc/passwd`, `/etc/shadow`, `su`, `sudo`, `usermod` | ✅ Complete | [`03-users-permissions/day-03.md`](03-users-permissions/day-03.md) |
-| **04** | *Coming soon...* | ⏳ In Progress | — |
+| **04** | Network Commands — `ifconfig`/`iwconfig`, `ping`, `netstat`, `arp`/`ip neigh`, `route`/`ip route` | ✅ Complete | [`04-network-commands/day-04.md`](04-network-commands/day-04.md) |
+| **05** | File Operations — `touch`, `echo` (`>`/`>>`), `cat`, `nano`, `gedit` | ✅ Complete | [`05-file-operations/day-05.md`](05-file-operations/day-05.md) |
 
 ---
 
@@ -44,6 +45,10 @@ linux-cybersecurity-journey/
 │   └── day-02.md
 ├── 03-users-permissions/
 │   └── day-03.md
+├── 04-network-commands/
+│   └── day-04.md
+├── 05-file-operations/
+│   └── day-05.md
 └── README.md
 ```
 
@@ -76,6 +81,18 @@ Each day contains:
 - Elevated execution: `sudo`, `sudoers`, `usermod -aG sudo`
 - Group management: `groups`, `/etc/group`
 
+### Networking Basics
+- Interface config: `ifconfig`/`iwconfig` (legacy) → `ip addr`/`ip link` (modern)
+- Connectivity: `ping` — ICMP, packet loss, RTT, TTL
+- Connections: `netstat` (legacy) → `ss` (modern)
+- ARP/neighbor: `arp -a` → `ip neigh`
+- Routing: `route` → `ip route` — flags, metrics, interfaces
+
+### File Operations
+- Creation: `touch`, `echo` with `>` (overwrite) vs `>>` (append)
+- Viewing: `cat`
+- Editing: `nano` (terminal), `gedit` (GUI)
+
 ---
 
 ## 📈 Learning Roadmap
@@ -84,13 +101,14 @@ Each day contains:
 graph LR
     A[Day 1: Linux Basics] --> B[Day 2: Permissions]
     B --> C[Day 3: Users & sudo]
-    C --> D[Day 4: Bash Scripting]
-    D --> E[Day 5: Package Management]
-    E --> F[Day 6: Networking Basics]
-    F --> G[Day 7: Service Management]
-    G --> H[Day 8: Log Analysis]
-    H --> I[Day 9: Intro to Pentesting Tools]
-    I --> J[Day 10: Project / CTF]
+    C --> D[Day 4: Networking]
+    D --> E[Day 5: File Operations]
+    E --> F[Day 6: Bash Scripting]
+    F --> G[Day 7: Package Management]
+    G --> H[Day 8: Service Management]
+    H --> I[Day 9: Log Analysis]
+    I --> J[Day 10: Pentesting Tools]
+    J --> K[Day 11: Project / CTF]
 ```
 
 ---
